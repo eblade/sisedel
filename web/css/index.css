@@ -1,0 +1,106 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: arial;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#user_name, #run_name {
+	color: #8a4;
+	font-weight: bold;
+}
+
+.test_case_list {
+	list-style-type: none;
+	margin-left: 5pt;	
+}
+
+.test_case_item {
+	color: #a84;
+	cursor: pointer;
+	margin-left: -25pt;	
+}
+
+div#menu {
+    width: 300pt;
+	padding: 5pt;
+	border-right: 1pt solid #aaa;
+}
+
+div#content {
+	position: absolute;
+	top: 0pt;
+	left: 320pt;
+	width: 600pt;
+}
+
+div#content_header {
+	padding: 5pt;
+}
+
+div#content_area {
+	padding: 5pt;
+}
+
+h2 {
+    margin: 5pt;
+
+}
+
+button {
+}
+
+span.state {
+	background-color: black;
+	color: white;
+	font-weight: bold;	
+	padding: 4pt;
+	margin: 3pt;
+	width: 60pt;
+	height: 15pt;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span.passed {
+	background-color: #8a4;
+}
+
+span.failed {
+	background-color: #d44;
+}
+
+span.blocked {
+	background-color: #48a;
+}
+
+span.skipped {
+	background-color: #aaa;
+}
+
+span.assignee {
+	color: #8a4;
+	font-weight: bold;	
+	margin: 3pt;
+}
+
+span.unassigned {
+	color: gray;
+	font-weight: bold;	
+}
+
+span.test_name {
+	color: black;
+	margin: 3pt;
+}

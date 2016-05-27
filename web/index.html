@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Sisedel</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/highlight/default.css"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/highlight.pack.js"></script>
+        <script src="js/showdown.min.js"></script>
+    </head>
+    <body>
+        <div id="menu">
+			<p>Logged in as <span id="user_name"></span></p>
+			<p>Run is <span id="run_name"></span></p>
+			<h1>Test cases</h1>
+            <div id="test_list"></div>
+            <button id="sync_records_button">Sync test run</button>
+        </div>
+        <div id="content">
+            <div id="content_header">
+            </div>
+            <div id="content_area">
+            </div>
+            <div id="feedback_area">
+                <button id="pass_button">Pass</button>
+                <button id="fail_button">Fail</button>
+                <button id="block_button">Block</button>
+                <button id="skip_button">Skip</button>
+                <button id="reset_button">Reset</button>
+            </div>
+        </div>
+        <script src="js/sisedel.js"></script>
+    </body>
+</html>
