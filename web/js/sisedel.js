@@ -3,7 +3,8 @@ $(function() {
     var markdown = new showdown.Converter();
     markdown.setOption('ghCodeBlocks', true);
 
-    var scope = Object();
+    var scope = new Object();
+    var t = new Date();
 
     var state_name = {
         0: 'not_run',
@@ -51,7 +52,7 @@ $(function() {
     var load_test_cases = function() {
         $('#content_header').html('Test Cases');
         $.ajax({
-            url: '/record',
+            url: '/record?cache=' + t.getTime(),
             success: function(data) {
                 $('#content_area').html('');
                 $.each(data.entries, function(index, category) {
@@ -133,7 +134,7 @@ $(function() {
         });
         build_op_buttons(testcase.test_category, testcase.test_name);
         $.ajax({
-            url: testcase.history_url,
+            url: testcase.history_url + '?cache=' + t.getTime(),
             success: function(data) {
                 $('#jira_input').val(data.current.jira || '');
                 $('#comment_input').val(data.current.comment || '');

@@ -38,7 +38,9 @@ if __name__ == '__main__':
     config = configparser.ConfigParser()
     config.read(args.config)
     testcase.ROOT = config['Database']['test case folder']
+    logging.info("Test case folder is %s", testcase.ROOT)
     token.BASE_URI = config['Server']['base uri']
+    logging.info("Base URI is %s", token.BASE_URI)
     logging.info("Config read from %s", args.config)
 
     # Database
