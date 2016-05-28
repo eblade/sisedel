@@ -6,7 +6,7 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -32,15 +32,20 @@ a {
 }
 
 div#menu {
-    width: 300pt;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 30pt;
+    width: 100%;
 	padding: 5pt;
 	border-right: 1pt solid #aaa;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1pt solid #888;
 }
 
 div#content {
-	position: absolute;
-	top: 0pt;
-	left: 320pt;
+    margin: 0 auto;
+    margin-top: 45pt;
 	width: 600pt;
 }
 
@@ -61,16 +66,26 @@ button {
 }
 
 span.state {
-	background-color: black;
+	background-color: #aaa;
 	color: white;
 	font-weight: bold;	
 	padding: 4pt;
 	margin: 3pt;
-	width: 60pt;
+	width: 70pt;
 	height: 15pt;
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
+}
+
+span.not_run {
+	background-color: #aaa;
+    color: black;
+}
+
+span.assigned {
+	background-color: black;
+    color: white;
 }
 
 span.passed {
@@ -100,7 +115,43 @@ span.unassigned {
 	font-weight: bold;	
 }
 
+span.title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 span.test_name {
 	color: black;
 	margin: 3pt;
+}
+
+span.ts {
+    color: #888;
+    font-size: .8em;
+}
+
+#content_md {
+    margin-bottom: 20pt;
+    padding-bottom: 10pt;
+    border-bottom: 1pt solid #888;
+}
+
+#ops_area {
+    margin-top: 10pt;
+}
+
+#content_input {
+    margin-top: 10pt;
+    margin-bottom: 20pt;
+}
+
+#content_input > div.label {
+    margin-top: 15pt;
+    margin-bottom: 2pt;
+}
+
+input[type=text] {
+    width: 95%;
+    padding: 2pt;
+    border: 1pt solid #888;
 }
