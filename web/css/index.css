@@ -153,5 +153,8 @@ span.ts {
 input[type=text] {
     width: 95%;
     padding: 2pt;
-    border: 1pt solid #888;
+    border: 0;
+    border-bottom: 1pt dotted #888;
+    margin-top: 10pt;
+    margin-bottom: 15pt;
 }
